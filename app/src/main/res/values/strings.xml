@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ServiceBroadcastBinding</string>
+    <string name="get_data_from_service_by_broadcastreceiver">Get Data from Service by BroadcastReceiver</string>
+</resources>
