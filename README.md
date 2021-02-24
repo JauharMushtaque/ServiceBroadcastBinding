@@ -6,3 +6,6 @@ Activity makes the requests to the service, but does not bind to it - just sends
 Additionally, Activity includes the information of BroadcastReceiver that should be called back when service is done with the requested task.
 The information is passed by PendingIntent. 
 The service handles the task in background thread and when task is finished, service broadcasts the BroadcastReceiver with an answer.
+
+This broadcast receiver will be notified from service, when task is done.
+the most important part is in handleMessage() method. Service simply makes the broadcasts operation for delivering results to Broadcast Receiver.
